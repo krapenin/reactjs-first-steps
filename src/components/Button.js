@@ -1,7 +1,7 @@
 import React from "react";
 
-export default function Button({value, callBack}) {
+export default function Button({value, disabled, callBack}) {
     return (
-        <><input type="button" value={value} onClick={callBack}/></>
+        <><input type="button" disabled={disabled}  value={value} onClick={callBack}/></>
     );
 }
