@@ -1,25 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
+import Title from "./components/TItle";
+import TextBox from "./components/TextBox";
+import Button from "./components/Button";
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+    const handleOnClickButton = () => {
+        console.info("Acabas de pulsarme");
+    };
+
+
+    return (
+        <div className="App">
+            <Title text="Texto para título 1"/>
+            <TextBox name="text1"/>
+            <Button value="púlsame" callBack={handleOnClickButton}/>
+        </div>
+    );
 }
 
 export default App;
