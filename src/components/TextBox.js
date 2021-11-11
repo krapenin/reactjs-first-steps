@@ -9,6 +9,6 @@ export default function TextBox({name}) {
     };
 
     return (
-        <><input type="text" name={name} value={value} onChange={handleOnKeyUp}/></>
+        <><input type="text" placeholder="código de oficina" name={name} value={value} onChange={handleOnKeyUp}/></>
     );
 }
